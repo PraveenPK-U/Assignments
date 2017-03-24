@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Assignment3</title>
+    <style>
+        body {
+            
+            background-image:url("Images/maxresdefault.jpg");
+            -webkit-background-size:cover;
+        }
+ 
+        div{
+            position:absolute;
+            width:400px;
+            border:1px solid black;
+            height:40px;
+            background-color: #ffffff;
+            opacity: 0.7;
+            border-radius: 5px;
+            left:300px
+           
+        }
+        input {
+            position:absolute;
+            left:120px;
+            width:250px;
+            height:20px;
+            top:5px;
+        }
+        Label{
+           position:absolute;
+           left:5px;
+           font-size:18px;
+           color:black;
+           font-family:'Times New Roman';
+        }
+        h1 {
+            position:absolute;
+            left:300px;
+            font-size:15px;
+            color:white;
+        }
+        #Address {
+            position:absolute;
+            left:120px;
+            top:10px;
+            width:250px;
+            border-radius:5px;
+        }
+        input[type='radio'] {
+            position:fixed;
+            top:430px;
+
+        }
+        img {
+            position:absolute;
+           width:35px;
+           top:22px;
+        }
+        #card {
+            position:absolute;
+            top:25px;
+           font-size:15px;
+           font-family:'Times New Roman';
+        }
+        button {
+            position:absolute;
+            top:620px;
+            left:450px;
+            border-radius:15px;
+            border:1px solid black;
+            width:90px;
+            height:30px;
+            background-color:black;
+           color:white;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <h1 style="top:2px;">Step 1: Your Details</h1>
+    <div style="top:35px;">
+         <label style="top:5px;">Name</label> <input placeholder="First and Last name"/>
+     </div>
+   <div style="top:80px;">
+         <label>Email</label> <input placeholder="example@domain.com"/>
+ </div>
+      <div style="top:125px;">
+         <label>Phone</label> <input placeholder="e.g. +447500000" />
+ </div>
+     <h1 style="top:170px;">Step 1: Delivery Address</h1>
+    <div style="top:200px; height:90px ">
+         <label >Address</label> <textarea id="Address" rows="4" cols="30"></textarea>
+     </div>
+    <div style="top:295px";>
+        <label>Postal Code</label><input /> 
+    </div>
+    <div style="top:340px";>
+        <label>Country</label><input /> 
+    </div>
+    <h1 style="top:380px;">Step 1: Card Details</h1>
+    <div style="top:410px; height:70px;">
+     <label style="font-size:15px;position:absolute;">Card Type</label>
+       
+       <input id="Radio" type="radio" style="left:220px;"/>
+        <input id="Radio1" type="radio" style="left:320px;"/>
+        <input id="Radio2" type="radio" style="left:450px;"/>
+        <img style="left:65px;"  src="Images/visalogo-big.gif" />
+        <img style="left:160px;" src="Images/mastercard_logo_5.gif" />
+        <img style="left:290px;height:20px;" src="Images/unnamed.png" />
+        <label id="card" style="left:105px;">VISA</label>
+        <label id="card" style="left:200px;">MASTER</label>
+        <label id="card" style="left:327px;">AMEX</label>
+    </div>
+    <div style="top:485px";>
+        <label>Card Number</label><input /> 
+    </div>
+     <div style="top:530px";>
+        <label>Security Code</label><input /> 
+    </div>
+     <div style="top:575px";>
+        <label>Name On Card</label><input placeholder="Exact name on the card"/> 
+    </div>
+
+    <button>BUY IT!</button>
+    
+</body>
+
+</html>
