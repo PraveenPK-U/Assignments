@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <style>
+        .box {
+            position:absolute;
+            left:550px;
+            width:80px;
+            height:80px;
+            background-color:green;     
+            color:white;
+            text-align:center;
+            line-height: 70px;
+            top:20px;
+        
+        }
+             .box:hover {
+                animation:examples;
+           animation-duration: 10s;
+            }
+           @keyframes examples {
+    25%   {background-color:red; border-radius:20px; }
+    55%  {background-color:orange; border-radius:30px; }
+    75%  {background-color:blue; border-radius:50px; }
+}
+    </style>
+
+</body>
+    <div class="box">BOX</div>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Assignement1</title>
+<style>
+.bubble {
+   position: relative;
+   width: 250px;
+   height: 120px;
+   line-height: 120px;
+
+   text-align: center;
+   left:50px;
+   background: blue;
+   border-radius: 10px;
+}
+
+.bubble:after {
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 27px 46px 27px 0;
+   border-color: transparent blue; /* #ADB400;*/
+   display: block;
+   width: 0;
+   z-index: 1;
+   left: -46px;
+   top: 33px;
+}
+
+</style>
+</head>
+<body>
+    <div class="bubble"></div>
+</body>
+</html>
